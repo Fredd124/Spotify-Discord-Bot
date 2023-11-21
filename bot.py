@@ -6,8 +6,7 @@ import json
 from requests import post
 import dotenv
 from discord.ext import commands
-import spotipy
-from spotipy.oauth2 import SpotifyOAuth
+
 
 dotenv.load_dotenv()
 
