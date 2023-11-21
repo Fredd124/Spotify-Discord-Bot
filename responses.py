@@ -630,7 +630,6 @@ async def help(ctx, is_private):
     response += "\t\tExample: #recommendations 10 | Taylor Sift | pop, rock | Bad Blood, Shape of You\n"
     response += "\t\tNote: At least one of 'artists', 'genres', or 'tracks' is required. The sum of them can't be more than 5.\n"
     response += "\t" + "#game " + "playlist_name/playlis_url " + "mode=songs/artists" + "\n"
-    response += "\t" + "#usertop " + "mode=songs/artists " + "limit=(1-50) " + "time=short/medium/long" + "\n"
     response += "\t" + "Note: If before every command you insert '?' the information will be sent to you via DM" + "`"
     
     await send(ctx, "Help:", response, "", "", is_private)
