@@ -910,13 +910,12 @@ async def game(ctx, tokenSpotify, playlist_name):
 
 #################### HANDLE RESPONSES ####################
 
-async def handle_responses(ctx, tokenSpotify, message, sp, is_private):
+async def handle_responses(ctx, tokenSpotify, message, is_private):
     """
     Handle all responses.
     :params ctx: Discord context
     :params tokenSpotify: Spotify API token
     :params message: Message with the command
-    :params sp: Spotify API object
     :params is_private: Boolean to check if the message should be sent via DM
     """
     p_message = message.lower()

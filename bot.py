@@ -41,17 +41,16 @@ def get_auth_header(token):
     """
     return {"Authorization": "Bearer " + token}
 
-async def send_message(ctx, tokenSpotify, user_message, sp, is_private):
+async def send_message(ctx, tokenSpotify, user_message, is_private):
     """
     Send message to discord
     :params ctx: Discord context
     :params tokenSpotify: Spotify token
     :params user_message: Message sent by user
-    :params sp: Spotify object
     :params is_private: Boolean to check if message is private
     """
     try:
-        await responses.handle_responses(ctx, tokenSpotify, user_message, sp, is_private)
+        await responses.handle_responses(ctx, tokenSpotify, user_message, is_private)
     except Exception as e:
         print(e)
 
@@ -61,13 +60,6 @@ def run_discord_bot():
     """
     CLIENT_ID = os.getenv('CLIENT_ID')
     CLIENT_SECRET = os.getenv('CLIENT_SECRET')
-    SPOTIPY_REDIRECT_URI = "http://localhost:8888/callback"
-    SCOPE = "user-top-read"
-
-    sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=CLIENT_ID, 
-                                                    client_secret=CLIENT_SECRET,
-                                                    redirect_uri=SPOTIPY_REDIRECT_URI,
-                                                    scope=SCOPE))
   
     global tokenSpotify
     tokenSpotify = get_token(CLIENT_ID, CLIENT_SECRET)
@@ -91,9 +83,9 @@ def run_discord_bot():
 
         if user_message[0] == '?':
             user_message = user_message[1:]
-            await send_message(ctx, tokenSpotify, user_message, sp, True)
+            await send_message(ctx, tokenSpotify, user_message, True)
         else:
-            await send_message(ctx, tokenSpotify, user_message, sp, False)
+            await send_message(ctx, tokenSpotify, user_message, False)
 
     bot.run(tokenBot)
   
