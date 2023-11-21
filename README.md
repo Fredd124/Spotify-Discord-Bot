@@ -33,10 +33,10 @@ This repository contains scripts for a Discrod Bot. The bot provides various fun
    ````
   3. Set up credentials:
       * Spotify Developer Credentials:
-        * Register your application on the Spotify Developer Dashboard.
+        * Register your application on the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/).
         * Obtain CLIENT_ID and CLIENT_SECRET.
       * Discord Bot Token:
-        * Create a new bot on the Discord Developer Portal.
+        * Create a new bot on the [Discord Developer Portal](https://discord.com/developers/applications).
         * Generate a bot token under the 'Bot' section.
         * To add the bot to a server, navigate to 'OAuth2' > 'URL Generator', select 'bot' scope, and the necessary permissions. Use the generated URL to invite the bot to your server.
   4. Run `main.py` to start the bot:
