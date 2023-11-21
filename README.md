@@ -32,10 +32,10 @@ This repository contains scripts for a Discrod Bot. The bot provides various fun
    pip install discord.py spotipy requests asyncio
    ````
   3. Set up credentials:
-    - Spotify Developer Credentials:
+    * Spotify Developer Credentials:
       * Register your application on the Spotify Developer Dashboard.
       * Obtain CLIENT_ID and CLIENT_SECRET.
-    - Discord Bot Token:
+    * Discord Bot Token:
       * Create a new bot on the Discord Developer Portal.
       * Generate a bot token under the 'Bot' section.
       * To add the bot to a server, navigate to 'OAuth2' > 'URL Generator', select 'bot' scope, and the necessary permissions. Use the generated URL to invite the bot to your server.
