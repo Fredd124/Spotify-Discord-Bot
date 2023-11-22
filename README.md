@@ -40,10 +40,11 @@ This repository contains scripts for a Discrod bot. The bot provides various fun
         * Generate a bot token under the 'Bot' section.
         * To add the bot to a server, navigate to 'OAuth2' > 'URL Generator', select 'bot' scope, and the necessary permissions. Use the generated URL to invite the bot to your server.
   4. Create a .env file in the root directory:
+  
      Add the tokens you got from the previous step, to the file you created. Use the following format:
-     ```bash
-     TOKEN_NAME=token
-     ```
+   ```bash
+   TOKEN_NAME=token
+   ```
   5. Run `main.py` to start the bot:
    ```bash
    python3 main.py
