@@ -29,7 +29,7 @@ This repository contains scripts for a Discrod bot. The bot provides various fun
    ```
   2. Install the required Python libraries:
    ```bash
-   pip install discord.py spotipy requests asyncio
+   pip install discord.py requests asyncio
    ````
   3. Set up credentials:
       * Spotify Developer Credentials:
