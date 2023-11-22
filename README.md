@@ -1,12 +1,12 @@
 # Spotify-Discord-Bot
 
 ## Introduction
-This repository contains scripts for a Discrod Bot. The bot provides various functionalities related to Spotify, such as fetching artist information, album details, track features, and more. It utilizes the Spotify API and integrates with Discord to offer an interactive experience.
+This repository contains scripts for a Discrod bot. The bot provides various functionalities related to Spotify, such as fetching artist information, album details, track features, and more. It utilizes the Spotify API and integrates with Discord to offer an interactive experience.
 
 ## Repository Structure
-  1. `main.py`: The main script to run the Spotify Bot on Discord.
+  1. `main.py`: The main script to run the Spotify bot on Discord.
   2. `bot.py`: It sets up the Discord bot, its main events and initializes the token for the Spotify API.
-  3. `responses.py`: Contains the core functionalities of the Spotify Bot. It includes functions to process user commands, interact with the Spotify API, and send responses back to the Discord server.
+  3. `responses.py`: Contains the core functionalities of the Spotify bot. It includes functions to process user commands, interact with the Spotify API, and send responses back to the Discord server.
   4. `high_scores.txt`: Saves the best scores from all players, to display them later at the end of the games.
 
 ## Main Features 
@@ -44,5 +44,5 @@ This repository contains scripts for a Discrod Bot. The bot provides various fun
    python3 main.py
    ```
 ## Usage
-  * Users can interact with the bot by sending commands on the Discord server. Commands include #artist, #album, #track, and more, each providing specific information or functionalities. For more information about the commands, type `#help` in a discord channel where the bot can read messages.
+  * Users can interact with the bot by sending commands on the Discord server. Commands include `#artist`, `#album`, `#track`, and more, each providing specific information or functionalities. For more information about the commands, type `#help` in a discord channel where the bot can read messages.
      
